@@ -3,3 +3,5 @@
 /ISICArchive
 /imagedata
 /crop/output
+/crop/crop-env
+/API/venv-api
