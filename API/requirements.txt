@@ -1,2 +1,5 @@
 flask
 flask-restful
+tensorflow
+opencv-python
+numpy
