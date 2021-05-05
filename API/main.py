@@ -37,11 +37,7 @@ def upload_image():
 		img = cv.imread(os.path.join(app.config['UPLOAD_FOLDER'], filename))
 		img = np.expand_dims(img, axis=0)
 		# Send result from the model back to the app
-		#print(tmp.predict(img))
-		# Return 0 or 1
-		#np.argmax(tmp.predict(img))
-		return jsonify(np.argmax(tmp.predict(img)))
-		#return jsonify({'message':'image successfully uploaded'})
+		return jsonify(str(np.argmax(tmp.predict(img))))
 	else:
 		return jsonify({'error':'allowed image types are -> png, jpg, jpeg'})
 
