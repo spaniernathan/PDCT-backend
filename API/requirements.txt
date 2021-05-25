@@ -1,5 +1,5 @@
 flask
 flask-restful
 tensorflow
-opencv-python
+opencv-contrib-python-headless
 numpy
