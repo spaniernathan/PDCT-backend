@@ -1,7 +1,6 @@
 .DS_Store
+.vscode
 /.ipynb_checkpoints
 /ISICArchive
 /imagedata
-/crop/output
-/crop/crop-env
 /API/venv-api
