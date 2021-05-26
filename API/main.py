@@ -13,7 +13,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = './volume/uploads'
 
 global predictionModel
-predictionModel = tf.keras.models.load_model('./volume/model/best_model')
+predictionModel = tf.keras.models.load_model('./volume/model')
 
 def allowed_file(filename):
 	return '.' in filename and filename.rsplit('.', 1)[1].lower() in ['png', 'jpg', 'jpeg']
