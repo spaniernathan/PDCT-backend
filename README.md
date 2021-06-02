@@ -22,6 +22,14 @@ docker run -p '10000:10000' api
 
 <img src="./readme-img/postman-request.png" />
 
+# Training of models
+The training of the models is first done though "Classification melanoma (from scratch).ipynb" which traines models from scratch. Random search is used to test different hyperparameter settings.
+The second step of training is training a model through "Classification melanoma (transfer learning fine tuning).ipynb". Here transfer learning and fine tuning is used together with different hyperparameter settings for the classification layer (random search is used). Two models in the base model is here tested, VGG16 and InceptionV3, where the latter is favourd based on evaluation metrics.
+
+# Evaluation of models
+To evaluate the models created, the result from each training is written to a local database. Another script is used to generate graphs "trainingResults/Show training graphs.ipynb", that is put in the same folder as .png-files.
+In the training notebooks there are also code showing evaluation metrics as accuracy on held-out testset, confusion matrix etc.
+
 # Contibutors
 
 - SPANIER Nathan
